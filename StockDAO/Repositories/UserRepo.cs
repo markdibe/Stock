@@ -42,5 +42,14 @@ namespace StockDAO.Repositories
         {
             return _context.Users.FirstOrDefault(x => x.UserId.Equals(id));
         }
+
+        public bool IsCorrectLogin(User user)
+        {
+            bool existed = _context.Users.Any(x =>
+            x.Email.ToLower().Trim().Equals(user.Email.ToLower().Trim())
+            && x.Password.Equals(user.Password)
+            );
+            return existed;
+        }
     }
 }

@@ -14,5 +14,7 @@ namespace StockDAO.IRepo
         User GetById(string id);
 
         ICollection<User> Get();
+
+        bool IsCorrectLogin(User user);
     }
 }

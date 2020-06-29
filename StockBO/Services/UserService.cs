@@ -25,15 +25,24 @@ namespace StockBO.Services
             using (var uow = _facade.unitOfWork)
             {
                 User newUser = converter.Convert(user);
-                uow.UserRepo.Create(newUser);
-                uow.complete();
-                return converter.Convert(newUser) ;
+                //saving password inside database as encripted code  and save the key of encription
+                if (GetByEmail(user) == null)
+                {
+                    //generate a special encription key for the user and save it 
+                    newUser.EncriptionKey = Guid.NewGuid().ToString();
+                    // encript password and save it into db as encripted
+                    newUser.Password = StringCipher.Encrypt(newUser.Password, newUser.EncriptionKey);
+                    uow.UserRepo.Create(newUser);
+                    uow.complete();
+                    return converter.Convert(newUser);
+                }
             }
+            return null;
         }
 
         public UserBO Delete(string id)
         {
-            using(var uow = _facade.unitOfWork)
+            using (var uow = _facade.unitOfWork)
             {
                 User user = uow.UserRepo.Delete(id);
                 uow.complete();
@@ -57,12 +66,12 @@ namespace StockBO.Services
             {
                 return converter.Convert(uow.UserRepo.GetById(id));
             }
-            
+
         }
 
         public UserBO Update(UserBO updatedUserBo)
         {
-            using(var uow = _facade.unitOfWork)
+            using (var uow = _facade.unitOfWork)
             {
                 User UserDb = uow.UserRepo.GetById(updatedUserBo.UserId);
                 UserDb.UserName = updatedUserBo.UserName;
@@ -72,5 +81,31 @@ namespace StockBO.Services
                 return converter.Convert(UserDb);
             }
         }
+
+        public bool IsCorrectLogin(UserBO user)
+        {
+
+            if (GetByEmail(user) != null)
+            {
+                string encriptionKey = GetByEmail(user).EncriptionKey;
+                string encriptInputPassword = StringCipher.Encrypt(user.Password, encriptionKey);
+                user.Password = encriptInputPassword;
+                using (var uow = _facade.unitOfWork)
+                {
+                    return uow.UserRepo.IsCorrectLogin(converter.Convert(user));
+                }
+            }
+            return false;
+        }
+
+        public UserBO GetByEmail(UserBO user)
+        {
+            using (var uow = _facade.unitOfWork)
+            {
+                return converter.Convert(uow.UserRepo.Get().FirstOrDefault(x => x.Email.Trim().ToLower().Equals(user.Email.Trim().ToLower())));
+            }
+        }
+
+
     }
 }

@@ -63,7 +63,7 @@ namespace StockApi.Controllers
 
         // PUT api/<AuthenticationsController>/5
         [HttpPut]
-        public IActionResult Put( [FromBody] UserBO user)
+        public IActionResult Put([FromBody] UserBO user)
         {
             if (!ModelState.IsValid) { return BadRequest("Invalid Model State!"); }
             try
@@ -90,5 +90,19 @@ namespace StockApi.Controllers
                 return BadRequest(e.Message);
             }
         }
+
+        [HttpPost("IsValidLogin")]
+        public IActionResult IsValidaLogin([FromBody] UserBO user)
+        {
+            try
+            {
+                return Ok(_facade.userService.IsCorrectLogin(user));
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+
     }
 }

@@ -17,5 +17,8 @@ namespace StockBO.IServices
         ICollection<UserBO> Get();
 
         UserBO Update(UserBO updatedUserBo);
+
+        bool IsCorrectLogin(UserBO user);
+
     }
 }
