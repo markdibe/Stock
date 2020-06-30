@@ -7,9 +7,20 @@ using System.Text;
 
 namespace StockDAO.Entities
 {
-    public class Item 
+    public class Item
     {
-        public Int64 Id { get; set; }
+        private string _Id;
+        public string Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                _Id = Guid.NewGuid().ToString() + "-" + Name;
+            }
+        }
 
         [Required]
         [DataType(DataType.Text)]
@@ -21,9 +32,7 @@ namespace StockDAO.Entities
         public virtual Category Category { get; set; }
 
         [BarCode]
-        
         public string BarCode { get; set; }
-
 
     }
 }

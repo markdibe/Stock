@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lenovo\\Desktop\\Projects\\Stock Application\\Stock\\StockApi\\StockApi.csproj": {}
+    "C:\\Users\\dibem.PRESIDENCY\\Documents\\GitHub\\Stock\\StockApi\\StockApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lenovo\\Desktop\\Projects\\Stock Application\\Stock\\StockApi\\StockApi.csproj": {
+    "C:\\Users\\dibem.PRESIDENCY\\Documents\\GitHub\\Stock\\StockApi\\StockApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\Desktop\\Projects\\Stock Application\\Stock\\StockApi\\StockApi.csproj",
+        "projectUniqueName": "C:\\Users\\dibem.PRESIDENCY\\Documents\\GitHub\\Stock\\StockApi\\StockApi.csproj",
         "projectName": "StockApi",
-        "projectPath": "C:\\Users\\lenovo\\Desktop\\Projects\\Stock Application\\Stock\\StockApi\\StockApi.csproj",
-        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\Desktop\\Projects\\Stock Application\\Stock\\StockApi\\obj\\",
+        "projectPath": "C:\\Users\\dibem.PRESIDENCY\\Documents\\GitHub\\Stock\\StockApi\\StockApi.csproj",
+        "packagesPath": "C:\\Users\\dibem.PRESIDENCY\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dibem.PRESIDENCY\\Documents\\GitHub\\Stock\\StockApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dibem.PRESIDENCY\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -26,16 +27,16 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\lenovo\\Desktop\\Projects\\Stock Application\\Stock\\StockBO\\StockBO.csproj": {
-                "projectPath": "C:\\Users\\lenovo\\Desktop\\Projects\\Stock Application\\Stock\\StockBO\\StockBO.csproj"
+              "C:\\Users\\dibem.PRESIDENCY\\Documents\\GitHub\\Stock\\StockBO\\StockBO.csproj": {
+                "projectPath": "C:\\Users\\dibem.PRESIDENCY\\Documents\\GitHub\\Stock\\StockBO\\StockBO.csproj"
               },
-              "C:\\Users\\lenovo\\Desktop\\Projects\\Stock Application\\Stock\\StockDAO\\StockDAO.csproj": {
-                "projectPath": "C:\\Users\\lenovo\\Desktop\\Projects\\Stock Application\\Stock\\StockDAO\\StockDAO.csproj"
+              "C:\\Users\\dibem.PRESIDENCY\\Documents\\GitHub\\Stock\\StockDAO\\StockDAO.csproj": {
+                "projectPath": "C:\\Users\\dibem.PRESIDENCY\\Documents\\GitHub\\Stock\\StockDAO\\StockDAO.csproj"
               }
             }
           }
@@ -78,20 +79,21 @@
         }
       }
     },
-    "C:\\Users\\lenovo\\Desktop\\Projects\\Stock Application\\Stock\\StockBO\\StockBO.csproj": {
+    "C:\\Users\\dibem.PRESIDENCY\\Documents\\GitHub\\Stock\\StockBO\\StockBO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\Desktop\\Projects\\Stock Application\\Stock\\StockBO\\StockBO.csproj",
+        "projectUniqueName": "C:\\Users\\dibem.PRESIDENCY\\Documents\\GitHub\\Stock\\StockBO\\StockBO.csproj",
         "projectName": "StockBO",
-        "projectPath": "C:\\Users\\lenovo\\Desktop\\Projects\\Stock Application\\Stock\\StockBO\\StockBO.csproj",
-        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\Desktop\\Projects\\Stock Application\\Stock\\StockBO\\obj\\",
+        "projectPath": "C:\\Users\\dibem.PRESIDENCY\\Documents\\GitHub\\Stock\\StockBO\\StockBO.csproj",
+        "packagesPath": "C:\\Users\\dibem.PRESIDENCY\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dibem.PRESIDENCY\\Documents\\GitHub\\Stock\\StockBO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dibem.PRESIDENCY\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -100,13 +102,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\lenovo\\Desktop\\Projects\\Stock Application\\Stock\\StockDAO\\StockDAO.csproj": {
-                "projectPath": "C:\\Users\\lenovo\\Desktop\\Projects\\Stock Application\\Stock\\StockDAO\\StockDAO.csproj"
+              "C:\\Users\\dibem.PRESIDENCY\\Documents\\GitHub\\Stock\\StockDAO\\StockDAO.csproj": {
+                "projectPath": "C:\\Users\\dibem.PRESIDENCY\\Documents\\GitHub\\Stock\\StockDAO\\StockDAO.csproj"
               }
             }
           }
@@ -138,20 +140,21 @@
         }
       }
     },
-    "C:\\Users\\lenovo\\Desktop\\Projects\\Stock Application\\Stock\\StockDAO\\StockDAO.csproj": {
+    "C:\\Users\\dibem.PRESIDENCY\\Documents\\GitHub\\Stock\\StockDAO\\StockDAO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\Desktop\\Projects\\Stock Application\\Stock\\StockDAO\\StockDAO.csproj",
+        "projectUniqueName": "C:\\Users\\dibem.PRESIDENCY\\Documents\\GitHub\\Stock\\StockDAO\\StockDAO.csproj",
         "projectName": "StockDAO",
-        "projectPath": "C:\\Users\\lenovo\\Desktop\\Projects\\Stock Application\\Stock\\StockDAO\\StockDAO.csproj",
-        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\Desktop\\Projects\\Stock Application\\Stock\\StockDAO\\obj\\",
+        "projectPath": "C:\\Users\\dibem.PRESIDENCY\\Documents\\GitHub\\Stock\\StockDAO\\StockDAO.csproj",
+        "packagesPath": "C:\\Users\\dibem.PRESIDENCY\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dibem.PRESIDENCY\\Documents\\GitHub\\Stock\\StockDAO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dibem.PRESIDENCY\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -160,7 +163,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {

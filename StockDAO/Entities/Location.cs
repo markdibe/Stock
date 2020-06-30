@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace StockDAO.Entities
@@ -12,9 +13,9 @@ namespace StockDAO.Entities
 
         [Required]
         [DataType(DataType.Text)]
-        [MinLength(4),MaxLength(50)]
+        [MinLength(4), MaxLength(50)]
         public string Name { get; set; }
-        
+
         [MaxLength(200)]
         public string Description { get; set; }
 
@@ -22,6 +23,11 @@ namespace StockDAO.Entities
 
         public string CoordinationY { get; set; }
 
-        public Int64 ParentId { get; set; }
+        public Int64? ParentId { get; set; }
+
+        [ForeignKey(nameof(Store))]
+        public int StoreId { get; set; }
+        public Store Store { get; set; }
     }
+
 }

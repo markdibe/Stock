@@ -12,7 +12,7 @@ namespace StockDAO.Entities
 
         [Required]
         public string Name { get; set; }
-        public int ItemsQuantity { get; set; }
+        public int? ItemsQuantity { get; set; }
 
         [DataType(DataType.Text)]
         public string Address { get; set; }
@@ -28,8 +28,9 @@ namespace StockDAO.Entities
 
         public string Street { get; set; }
 
+        public virtual ICollection<Location> Locations { get; set; }
 
-
+        
 
     }
 }

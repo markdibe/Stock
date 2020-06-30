@@ -5,9 +5,15 @@ using System.Text;
 
 namespace StockDAO.Entities
 {
-   public class HolderLocationTransaction
+    public class HolderLocationTransaction
     {
-        public UInt64 Id { get; set; }
+        private string _Id;
+        public string Id
+        {
+            get { return _Id; }
+
+            set { _Id = Guid.NewGuid().ToString(); }
+        }
 
         [ForeignKey(nameof(HolderInformation))]
         public Int64 HolderId { get; set; }

@@ -20,7 +20,7 @@ namespace StockDAO.Entities
         }
 
         [ForeignKey(nameof(Item))]
-        public Int64 ItemId { get; set; }
+        public string ItemId { get; set; }
 
         [ForeignKey(nameof(Location))]
         public Int64 LocationId { get; set; }

@@ -10,3 +10,15 @@ C:\Users\lenovo\Desktop\Projects\Stock Application\Stock\StockDAO\obj\Debug\netc
 C:\Users\lenovo\Desktop\Projects\Stock Application\Stock\StockDAO\bin\Debug\netcoreapp3.1\StockDAO.pdb
 C:\Users\lenovo\Desktop\Projects\Stock Application\Stock\StockDAO\obj\Debug\netcoreapp3.1\StockDAO.dll
 C:\Users\lenovo\Desktop\Projects\Stock Application\Stock\StockDAO\obj\Debug\netcoreapp3.1\StockDAO.pdb
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockDAO\bin\Debug\netcoreapp3.1\StockDAO.deps.json
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockDAO\bin\Debug\netcoreapp3.1\StockDAO.runtimeconfig.json
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockDAO\bin\Debug\netcoreapp3.1\StockDAO.runtimeconfig.dev.json
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockDAO\bin\Debug\netcoreapp3.1\StockDAO.dll
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockDAO\bin\Debug\netcoreapp3.1\StockDAO.pdb
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockDAO\obj\Debug\netcoreapp3.1\StockDAO.csprojAssemblyReference.cache
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockDAO\obj\Debug\netcoreapp3.1\StockDAO.AssemblyInfoInputs.cache
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockDAO\obj\Debug\netcoreapp3.1\StockDAO.AssemblyInfo.cs
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockDAO\obj\Debug\netcoreapp3.1\StockDAO.csproj.CoreCompileInputs.cache
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockDAO\obj\Debug\netcoreapp3.1\StockDAO.dll
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockDAO\obj\Debug\netcoreapp3.1\StockDAO.pdb
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockDAO\obj\Debug\netcoreapp3.1\StockDAO.genruntimeconfig.cache

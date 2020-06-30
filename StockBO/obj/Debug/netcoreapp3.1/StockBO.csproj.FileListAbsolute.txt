@@ -10,3 +10,15 @@ C:\Users\lenovo\Desktop\Projects\Stock Application\Stock\StockBO\obj\Debug\netco
 C:\Users\lenovo\Desktop\Projects\Stock Application\Stock\StockBO\bin\Debug\netcoreapp3.1\StockDAO.dll
 C:\Users\lenovo\Desktop\Projects\Stock Application\Stock\StockBO\bin\Debug\netcoreapp3.1\StockDAO.pdb
 C:\Users\lenovo\Desktop\Projects\Stock Application\Stock\StockBO\obj\Debug\netcoreapp3.1\StockBO.csproj.CopyComplete
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockBO\bin\Debug\netcoreapp3.1\StockBO.deps.json
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockBO\bin\Debug\netcoreapp3.1\StockBO.dll
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockBO\bin\Debug\netcoreapp3.1\StockBO.pdb
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockBO\bin\Debug\netcoreapp3.1\StockDAO.dll
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockBO\bin\Debug\netcoreapp3.1\StockDAO.pdb
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockBO\obj\Debug\netcoreapp3.1\StockBO.csprojAssemblyReference.cache
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockBO\obj\Debug\netcoreapp3.1\StockBO.AssemblyInfoInputs.cache
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockBO\obj\Debug\netcoreapp3.1\StockBO.AssemblyInfo.cs
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockBO\obj\Debug\netcoreapp3.1\StockBO.csproj.CoreCompileInputs.cache
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockBO\obj\Debug\netcoreapp3.1\StockBO.csproj.CopyComplete
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockBO\obj\Debug\netcoreapp3.1\StockBO.dll
+C:\Users\dibem.PRESIDENCY\Documents\GitHub\Stock\StockBO\obj\Debug\netcoreapp3.1\StockBO.pdb

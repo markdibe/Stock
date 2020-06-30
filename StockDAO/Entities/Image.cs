@@ -19,7 +19,7 @@ namespace StockDAO.Entities
             }
             set
             {
-                _Id = Guid.NewGuid().ToString() + "-" + DateTime.Today.ToString() + "-" + Name;
+                _Id = Guid.NewGuid().ToString() + "-" + Name;
             }
         }
 
