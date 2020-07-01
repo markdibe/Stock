@@ -1,6 +1,8 @@
 ﻿using StockDAO.Context;
 using StockDAO.IRepo;
 using StockDAO.Repositories;
+using Microsoft.Extensions.Configuration;
+
 using System;
 
 namespace StockDAO

@@ -3,22 +3,23 @@ using StockDAO.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace StockBO.IServices
 {
     public interface IUserService
     {
-        UserBO Create(UserBO user);
+        Task<UserBO> Create(UserBO user);
 
-        UserBO Delete(string id);
+        Task<UserBO> Delete(string id);
 
-        UserBO GetById(string id);
+        Task<UserBO> GetById(string id);
 
-        ICollection<UserBO> Get();
+        Task<ICollection<UserBO>> Get();
 
-        UserBO Update(UserBO updatedUserBo);
+        Task<UserBO> Update(UserBO updatedUserBo);
 
-        bool IsCorrectLogin(UserBO user);
+        Task<bool> IsCorrectLogin(UserBO user);
 
     }
 }

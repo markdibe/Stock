@@ -2,19 +2,20 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace StockDAO.IRepo
 {
     public interface IUserRepo
     {
-        User Create(User user);
+        Task<User> Create(User user);
 
-        User Delete(string id);
+        Task<User> Delete(string id);
 
-        User GetById(string id);
+        Task<User> GetById(string id);
 
-        ICollection<User> Get();
+        Task<ICollection<User>> Get();
 
-        bool IsCorrectLogin(User user);
+        Task<bool> IsCorrectLogin(User user);
     }
 }

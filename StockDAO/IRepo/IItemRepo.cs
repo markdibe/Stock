@@ -2,17 +2,18 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace StockDAO.IRepo
 {
     public interface IItemRepo
     {
-        Item Create(Item item);
+        Task<Item>  Create(Item item);
 
-        ICollection<Item> Get();
+        Task<ICollection<Item>> Get();
 
-        Item Delete(string id);
+        Task<Item> Delete(string id);
 
-        Item GetById(string id);
+        Task<Item> GetById(string id);
     }
 }
