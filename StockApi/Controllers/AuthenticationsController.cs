@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Mvc;
 using StockBO;
 using StockBO.BO;
+using System;
+using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -15,23 +14,24 @@ namespace StockApi.Controllers
     public class AuthenticationsController : ControllerBase
     {
         private readonly FacadeBO _facade;
-        public AuthenticationsController(FacadeBO facade)
+        private readonly IDataProtector _protector;
+        public AuthenticationsController(FacadeBO facade, IDataProtectionProvider provider)
         {
             _facade = facade;
+            _protector = provider.CreateProtector("ConfigurationManager.ConnectionStrings['DataProtection'].ConnectionString");
         }
         // GET: api/<AuthenticationsController>
         [HttpGet]
-        public IActionResult Get()
+        public async Task<IActionResult> Get()
         {
             try
             {
-                return Ok(_facade.userService.Get());
+                return await Task.FromResult(Ok(_facade.userService.Get()));
             }
             catch (Exception e)
             {
                 throw e;
             }
-
         }
 
         // GET api/<AuthenticationsController>/5
@@ -43,13 +43,14 @@ namespace StockApi.Controllers
 
         // POST api/<AuthenticationsController>
         [HttpPost]
-        public IActionResult Post([FromBody] UserBO user)
+        public async Task<IActionResult>  Post([FromBody] UserBO user)
         {
             if (ModelState.IsValid)
             {
                 try
                 {
-                    return Ok(_facade.userService.Create(user));
+                    user.Password = _protector.Protect(user.Password).ToString();
+                    return await Task.FromResult(Ok(_facade.userService.Create(user))) ;
                 }
                 catch (Exception e)
                 {

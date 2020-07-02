@@ -26,16 +26,11 @@ namespace StockBO.Services
             using (var uow = _facade.unitOfWork)
             {
                 User newUser = converter.Convert(user);
-                //saving password inside database as encripted code  and save the key of encription
-                if (GetByEmail(user) == null)
+                if (!emailExisted(user))
                 {
-                    //generate a special encription key for the user and save it 
-                    newUser.EncriptionKey = Guid.NewGuid().ToString();
-                    // encript password and save it into db as encripted
-                    newUser.Password = StringCipher.Encrypt(newUser.Password, newUser.EncriptionKey);
                     await uow.UserRepo.Create(newUser);
                     uow.complete();
-                    return user;
+                    return converter.Convert(newUser);
                 }
             }
             return null;
@@ -101,15 +96,23 @@ namespace StockBO.Services
         {
             using (var uow = _facade.unitOfWork)
             {
-                return   converter.Convert(  uow.UserRepo.Get()
-                    .Result.FirstOrDefault(x =>
-                x.Email.Trim().
-                ToLower().
-                Equals(user.Email.Trim().ToLower())));
-                //return converter.Convert(list.FirstOrDefault(x => x.Email.Trim().ToLower().Equals(user.Email.Trim().ToLower())));
+                var list = await Task.FromResult(uow.UserRepo.Get());
+
+                User _user = list.Result
+                   .FirstOrDefault(x => x.Email.Trim().ToLower().Equals(user.Email.Trim().ToLower()));
+                return converter.Convert(_user);
+
             }
         }
 
+        private bool emailExisted(UserBO user)
+        {
+            using (var uow = _facade.unitOfWork)
+            {
+                bool result = uow.UserRepo.Get().Result.Any(x => x.Email.ToLower().Trim().Equals(user.Email.Trim().ToLower()));
+                return result;
+            }
+        }
 
     }
 }
